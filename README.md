@@ -4,6 +4,8 @@ A frontend dashboard for IT operations to monitor enrolled devices, triage healt
 
 This repository is the source code for the application.
 
+Live link: https://fleet-health-12e5a.web.app/devices/LNV-0311
+
 ## Setup instructions
 
 ### Requirements
