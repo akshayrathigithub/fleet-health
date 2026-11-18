@@ -1,0 +1,205 @@
+@use 'mixins' as *;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: left;
+    font-weight: 400;
+    vertical-align: top;
+  }
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 8px;
+}
+
+.link {
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sub {
+  display: block;
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+.metric {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.noData {
+  @include muted;
+}
+
+.warning .value,
+.critical .value {
+  font-weight: 650;
+}
+
+.warning .value {
+  color: var(--warn);
+}
+
+.critical .value {
+  color: var(--crit);
+}
+
+/* Phones: each row is a card. */
+@include below($bp-table) {
+  .table,
+  .table tbody {
+    display: block;
+  }
+
+  /* Column headers are replaced by per-cell labels, but stay available to
+     screen readers. */
+  .table thead {
+    @include visually-hidden;
+  }
+
+  .table tbody {
+    display: grid;
+    gap: 10px;
+    padding: 0 14px 14px;
+  }
+
+  .table tbody tr {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px 12px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    &[data-selected] {
+      border-color: var(--accent);
+      background: var(--accent-tint);
+    }
+  }
+
+  .device {
+    grid-column: 1 / 4;
+  }
+
+  /* Stretch the link over the whole card so the card is one big tap target,
+     while keyboard and screen reader users still get a single, named link. */
+  .link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+  }
+
+  .health {
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .owner {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin-top: -6px;
+    font-size: var(--text-sm);
+    @include muted;
+
+    .sub {
+      display: inline;
+      margin-left: 0.35em;
+
+      &::before {
+        content: '· ';
+      }
+    }
+  }
+
+  .metric::before {
+    content: attr(data-label);
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 400;
+    @include muted;
+  }
+
+  .seen {
+    grid-column: 1 / -1;
+    font-size: var(--text-sm);
+    @include muted;
+
+    &::before {
+      content: attr(data-label) ': ';
+    }
+  }
+}
+
+/* Tablet and up: a real table. */
+@include above($bp-table) {
+  .table thead th {
+    padding: 10px;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    @include muted;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    background: var(--surface-2);
+    border-block: 1px solid var(--border);
+  }
+
+  .table tbody th,
+  .table tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .table tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+
+  .table tr > :first-child {
+    padding-left: 14px;
+  }
+
+  .table tr > :last-child {
+    padding-right: 14px;
+  }
+
+  .table tbody tr {
+    &:hover {
+      background: var(--surface-2);
+    }
+
+    &[data-selected] {
+      background: var(--accent-tint);
+
+      > :first-child {
+        box-shadow: inset 3px 0 0 var(--accent);
+      }
+    }
+  }
+
+  .seen {
+    white-space: nowrap;
+    @include muted;
+  }
+}
+
+@include optional-columns-hidden {
+  .optional {
+    display: none;
+  }
+}

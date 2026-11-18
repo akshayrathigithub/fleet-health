@@ -1,0 +1,1198 @@
+[
+  {
+    "id": "MBP-0142",
+    "model": "MacBook Pro 14\" (2021)",
+    "owner": "Priya Nair",
+    "team": "Design",
+    "os": "macOS 14.6",
+    "serial": "C02F81XKQ6",
+    "enrolledAt": "2022-03-14",
+    "minutesSinceCheckIn": 2,
+    "metrics": {
+      "cpu": 92,
+      "memory": 81,
+      "disk": 97,
+      "batteryHealth": 64
+    },
+    "history": {
+      "cpu": [61, 70, 88, 91, 93, 90, 92],
+      "memory": [72, 75, 78, 74, 80, 83, 81],
+      "disk": [84, 86, 88, 91, 93, 95, 97],
+      "batteryHealth": [66, 66, 65, 65, 65, 64, 64]
+    },
+    "alerts": [
+      {
+        "id": "MBP-0142-disk",
+        "severity": "critical",
+        "title": "Disk almost full",
+        "description": "97% used, 14 GB free of 494 GB",
+        "raisedHoursAgo": 76,
+        "acknowledgedHoursAgo": null
+      },
+      {
+        "id": "MBP-0142-cpu",
+        "severity": "critical",
+        "title": "Sustained high CPU",
+        "description": "Above 90% for most of the last 3 days",
+        "raisedHoursAgo": 52,
+        "acknowledgedHoursAgo": null
+      },
+      {
+        "id": "MBP-0142-memory",
+        "severity": "warning",
+        "title": "Memory pressure",
+        "description": "81% of 16 GB in use",
+        "raisedHoursAgo": 20,
+        "acknowledgedHoursAgo": null
+      },
+      {
+        "id": "MBP-0142-battery",
+        "severity": "warning",
+        "title": "Battery health degraded",
+        "description": "64% of design capacity",
+        "raisedHoursAgo": 240,
+        "acknowledgedHoursAgo": 2
+      }
+    ]
+  },
+  {
+    "id": "LNV-0311",
+    "model": "ThinkPad X1 Carbon Gen 9",
+    "owner": "Daniel Okafor",
+    "team": "Engineering",
+    "os": "Windows 11 23H2",
+    "serial": "PF3K9T2LXA",
+    "enrolledAt": "2021-09-06",
+    "minutesSinceCheckIn": 5,
+    "metrics": {
+      "cpu": 48,
+      "memory": 94,
+      "disk": 71,
+      "batteryHealth": 58
+    },
+    "history": {
+      "cpu": [41, 52, 45, 50, 44, 47, 48],
+      "memory": [78, 82, 85, 88, 90, 92, 94],
+      "disk": [66, 67, 68, 69, 70, 70, 71],
+      "batteryHealth": [61, 61, 60, 60, 59, 59, 58]
+    },
+    "alerts": [
+      {
+        "id": "LNV-0311-memory",
+        "severity": "critical",
+        "title": "Memory almost exhausted",
+        "description": "94% of 16 GB in use",
+        "raisedHoursAgo": 30,
+        "acknowledgedHoursAgo": null
+      },
+      {
+        "id": "LNV-0311-battery",
+        "severity": "critical",
+        "title": "Battery needs service",
+        "description": "58% of design capacity",
+        "raisedHoursAgo": 120,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "MBA-0087",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Arjun Mehta",
+    "team": "Sales",
+    "os": "macOS 14.6",
+    "serial": "FVFH42M7Q1",
+    "enrolledAt": "2022-11-21",
+    "minutesSinceCheckIn": 1,
+    "metrics": {
+      "cpu": 71,
+      "memory": 68,
+      "disk": 88,
+      "batteryHealth": 82
+    },
+    "history": {
+      "cpu": [55, 62, 58, 66, 70, 64, 71],
+      "memory": [60, 63, 66, 62, 65, 70, 68],
+      "disk": [79, 81, 82, 84, 85, 87, 88],
+      "batteryHealth": [83, 83, 83, 82, 82, 82, 82]
+    },
+    "alerts": [
+      {
+        "id": "MBA-0087-disk",
+        "severity": "warning",
+        "title": "Disk filling up",
+        "description": "88% used, 30 GB free of 251 GB",
+        "raisedHoursAgo": 48,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "DEL-0205",
+    "model": "Dell XPS 15 9520",
+    "owner": "Sofia Marino",
+    "team": "Finance",
+    "os": "Windows 11 23H2",
+    "serial": "7XK2M94DLP",
+    "enrolledAt": "2023-02-13",
+    "minutesSinceCheckIn": 8,
+    "metrics": {
+      "cpu": 35,
+      "memory": 86,
+      "disk": 62,
+      "batteryHealth": 74
+    },
+    "history": {
+      "cpu": [28, 33, 40, 31, 36, 30, 35],
+      "memory": [70, 74, 79, 81, 84, 85, 86],
+      "disk": [58, 59, 60, 60, 61, 62, 62],
+      "batteryHealth": [75, 75, 75, 74, 74, 74, 74]
+    },
+    "alerts": [
+      {
+        "id": "DEL-0205-memory",
+        "severity": "warning",
+        "title": "Memory pressure",
+        "description": "86% of 16 GB in use",
+        "raisedHoursAgo": 26,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "MBP-0178",
+    "model": "MacBook Pro 16\" (2023)",
+    "owner": "Kenji Watanabe",
+    "team": "Engineering",
+    "os": "macOS 15.1",
+    "serial": "K7QW3N0R5T",
+    "enrolledAt": "2023-08-28",
+    "minutesSinceCheckIn": 3,
+    "metrics": {
+      "cpu": 84,
+      "memory": 77,
+      "disk": 55,
+      "batteryHealth": 91
+    },
+    "history": {
+      "cpu": [58, 66, 71, 79, 82, 80, 84],
+      "memory": [64, 68, 70, 73, 75, 76, 77],
+      "disk": [52, 53, 53, 54, 54, 55, 55],
+      "batteryHealth": [92, 92, 91, 91, 91, 91, 91]
+    },
+    "alerts": [
+      {
+        "id": "MBP-0178-cpu",
+        "severity": "warning",
+        "title": "High CPU usage",
+        "description": "Above 75% for most of the last day",
+        "raisedHoursAgo": 18,
+        "acknowledgedHoursAgo": null
+      },
+      {
+        "id": "MBP-0178-memory",
+        "severity": "warning",
+        "title": "Memory pressure",
+        "description": "77% of 32 GB in use",
+        "raisedHoursAgo": 9,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "LNV-0298",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Hannah Schmidt",
+    "team": "Support",
+    "os": "Windows 11 23H2",
+    "serial": "PW08B6YH3C",
+    "enrolledAt": "2022-06-01",
+    "minutesSinceCheckIn": 12,
+    "metrics": {
+      "cpu": 22,
+      "memory": 41,
+      "disk": 47,
+      "batteryHealth": 67
+    },
+    "history": {
+      "cpu": [18, 25, 20, 27, 19, 24, 22],
+      "memory": [38, 42, 40, 44, 39, 43, 41],
+      "disk": [45, 45, 46, 46, 46, 47, 47],
+      "batteryHealth": [70, 69, 69, 68, 68, 67, 67]
+    },
+    "alerts": [
+      {
+        "id": "LNV-0298-battery",
+        "severity": "warning",
+        "title": "Battery health degraded",
+        "description": "67% of design capacity",
+        "raisedHoursAgo": 96,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "DEL-0190",
+    "model": "Dell Latitude 7430",
+    "owner": "Marcus Bell",
+    "team": "Sales",
+    "os": "Windows 11 22H2",
+    "serial": "4HT8Q1ZV6N",
+    "enrolledAt": "2022-01-17",
+    "minutesSinceCheckIn": 8820,
+    "metrics": null,
+    "history": null,
+    "alerts": [
+      {
+        "id": "DEL-0190-offline",
+        "severity": "warning",
+        "title": "Device offline",
+        "description": "No check-in for more than 5 days",
+        "raisedHoursAgo": 27,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "MBA-0064",
+    "model": "MacBook Air 13\" (2020)",
+    "owner": "Lucia Fernandez",
+    "team": "Marketing",
+    "os": "macOS 13.6",
+    "serial": "C02DN5J8ML",
+    "enrolledAt": "2021-04-26",
+    "minutesSinceCheckIn": 13560,
+    "metrics": null,
+    "history": null,
+    "alerts": [
+      {
+        "id": "MBA-0064-offline",
+        "severity": "warning",
+        "title": "Device offline",
+        "description": "No check-in for more than 5 days",
+        "raisedHoursAgo": 106,
+        "acknowledgedHoursAgo": null
+      }
+    ]
+  },
+  {
+    "id": "MBP-0221",
+    "model": "MacBook Pro 14\" (2023)",
+    "owner": "Tom Eriksson",
+    "team": "Engineering",
+    "os": "macOS 15.1",
+    "serial": "Q0W73LPAQD",
+    "enrolledAt": "2023-01-07",
+    "minutesSinceCheckIn": 18,
+    "metrics": {
+      "cpu": 29,
+      "memory": 34,
+      "disk": 26,
+      "batteryHealth": 78
+    },
+    "history": {
+      "cpu": [28, 36, 31, 29, 27, 27, 29],
+      "memory": [32, 36, 34, 37, 37, 33, 34],
+      "disk": [24, 24, 25, 25, 25, 26, 26],
+      "batteryHealth": [79, 79, 79, 78, 78, 78, 78]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0340",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Aisha Rahman",
+    "team": "Finance",
+    "os": "Windows 11 23H2",
+    "serial": "T36KKER052",
+    "enrolledAt": "2025-01-09",
+    "minutesSinceCheckIn": 26,
+    "metrics": {
+      "cpu": 48,
+      "memory": 37,
+      "disk": 36,
+      "batteryHealth": 96
+    },
+    "history": {
+      "cpu": [53, 50, 49, 48, 48, 50, 48],
+      "memory": [40, 40, 36, 40, 35, 39, 37],
+      "disk": [36, 36, 35, 36, 36, 37, 36],
+      "batteryHealth": [96, 96, 96, 96, 96, 96, 96]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0113",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Mateo Alvarez",
+    "team": "Support",
+    "os": "macOS 14.6",
+    "serial": "5NYKQJK2T9",
+    "enrolledAt": "2024-10-21",
+    "minutesSinceCheckIn": 31,
+    "metrics": {
+      "cpu": 29,
+      "memory": 67,
+      "disk": 66,
+      "batteryHealth": 96
+    },
+    "history": {
+      "cpu": [43, 42, 40, 33, 36, 33, 29],
+      "memory": [61, 64, 62, 66, 67, 69, 67],
+      "disk": [63, 64, 64, 65, 65, 66, 66],
+      "batteryHealth": [97, 97, 97, 96, 97, 96, 96]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0362",
+    "model": "MacBook Air 15\" (2024)",
+    "owner": "Chloe Dubois",
+    "team": "Sales",
+    "os": "macOS 15.1",
+    "serial": "76U8QLUM0W",
+    "enrolledAt": "2025-12-25",
+    "minutesSinceCheckIn": 38,
+    "metrics": {
+      "cpu": 34,
+      "memory": 56,
+      "disk": 58,
+      "batteryHealth": 85
+    },
+    "history": {
+      "cpu": [36, 35, 33, 35, 37, 31, 34],
+      "memory": [62, 59, 56, 57, 58, 57, 56],
+      "disk": [56, 56, 57, 58, 57, 58, 58],
+      "batteryHealth": [85, 85, 85, 85, 85, 85, 85]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0321",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Rahul Verma",
+    "team": "Marketing",
+    "os": "Windows 11 23H2",
+    "serial": "0KPJY8Y4EM",
+    "enrolledAt": "2021-10-21",
+    "minutesSinceCheckIn": 22,
+    "metrics": {
+      "cpu": 55,
+      "memory": 48,
+      "disk": 29,
+      "batteryHealth": 96
+    },
+    "history": {
+      "cpu": [47, 51, 50, 48, 57, 57, 55],
+      "memory": [48, 50, 48, 47, 47, 48, 48],
+      "disk": [26, 26, 26, 27, 28, 29, 29],
+      "batteryHealth": [96, 96, 96, 96, 96, 96, 96]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0347",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Emily Carter",
+    "team": "Finance",
+    "os": "Windows 11 23H2",
+    "serial": "RAV8MR0TBH",
+    "enrolledAt": "2022-08-05",
+    "minutesSinceCheckIn": 16,
+    "metrics": {
+      "cpu": 52,
+      "memory": 34,
+      "disk": 50,
+      "batteryHealth": 87
+    },
+    "history": {
+      "cpu": [49, 57, 55, 56, 54, 54, 52],
+      "memory": [41, 38, 37, 34, 35, 36, 34],
+      "disk": [48, 49, 50, 50, 50, 50, 50],
+      "batteryHealth": [88, 88, 88, 88, 87, 87, 87]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0166",
+    "model": "Dell XPS 15 9520",
+    "owner": "Noah Fischer",
+    "team": "Engineering",
+    "os": "Windows 11 23H2",
+    "serial": "1UBKF0Y7T4",
+    "enrolledAt": "2025-12-13",
+    "minutesSinceCheckIn": 1,
+    "metrics": {
+      "cpu": 39,
+      "memory": 45,
+      "disk": 28,
+      "batteryHealth": 84
+    },
+    "history": {
+      "cpu": [41, 47, 44, 44, 36, 41, 39],
+      "memory": [48, 47, 49, 49, 47, 46, 45],
+      "disk": [24, 25, 25, 26, 26, 28, 28],
+      "batteryHealth": [84, 84, 84, 84, 84, 84, 84]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0168",
+    "model": "Dell Latitude 7430",
+    "owner": "Yuki Tanaka",
+    "team": "Design",
+    "os": "Windows 11 22H2",
+    "serial": "9LGWR3XW33",
+    "enrolledAt": "2025-04-06",
+    "minutesSinceCheckIn": 12,
+    "metrics": {
+      "cpu": 53,
+      "memory": 35,
+      "disk": 50,
+      "batteryHealth": 86
+    },
+    "history": {
+      "cpu": [53, 57, 52, 53, 57, 48, 53],
+      "memory": [36, 36, 38, 35, 34, 34, 35],
+      "disk": [46, 46, 47, 48, 49, 49, 50],
+      "batteryHealth": [86, 86, 86, 86, 86, 86, 86]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0129",
+    "model": "MacBook Pro 14\" (2023)",
+    "owner": "Olivia Bennett",
+    "team": "Support",
+    "os": "macOS 15.1",
+    "serial": "T8MC79Y9FG",
+    "enrolledAt": "2023-01-16",
+    "minutesSinceCheckIn": 19,
+    "metrics": {
+      "cpu": 9,
+      "memory": 46,
+      "disk": 57,
+      "batteryHealth": 94
+    },
+    "history": {
+      "cpu": [8, 10, 13, 14, 13, 7, 9],
+      "memory": [47, 48, 45, 45, 44, 46, 46],
+      "disk": [53, 54, 55, 55, 55, 57, 57],
+      "batteryHealth": [95, 95, 95, 95, 94, 94, 94]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0144",
+    "model": "MacBook Pro 16\" (2023)",
+    "owner": "Liam O'Connor",
+    "team": "Sales",
+    "os": "macOS 15.1",
+    "serial": "M7XBR9U930",
+    "enrolledAt": "2021-11-20",
+    "minutesSinceCheckIn": 32,
+    "metrics": {
+      "cpu": 17,
+      "memory": 51,
+      "disk": 40,
+      "batteryHealth": 84
+    },
+    "history": {
+      "cpu": [21, 25, 20, 23, 14, 18, 17],
+      "memory": [48, 51, 52, 47, 49, 52, 51],
+      "disk": [38, 38, 39, 39, 39, 39, 40],
+      "batteryHealth": [85, 85, 85, 85, 84, 84, 84]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0287",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Fatima Zahra",
+    "team": "Marketing",
+    "os": "macOS 14.6",
+    "serial": "WKYDTLQW82",
+    "enrolledAt": "2021-07-06",
+    "minutesSinceCheckIn": 3,
+    "metrics": {
+      "cpu": 39,
+      "memory": 36,
+      "disk": 30,
+      "batteryHealth": 93
+    },
+    "history": {
+      "cpu": [38, 37, 42, 35, 42, 43, 39],
+      "memory": [39, 36, 36, 38, 39, 36, 36],
+      "disk": [30, 30, 30, 31, 30, 30, 30],
+      "batteryHealth": [94, 94, 94, 94, 93, 93, 93]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0336",
+    "model": "MacBook Air 15\" (2024)",
+    "owner": "Lucas Moreau",
+    "team": "Finance",
+    "os": "macOS 15.1",
+    "serial": "52Z1A225BH",
+    "enrolledAt": "2024-03-12",
+    "minutesSinceCheckIn": 44,
+    "metrics": {
+      "cpu": 24,
+      "memory": 60,
+      "disk": 51,
+      "batteryHealth": 81
+    },
+    "history": {
+      "cpu": [15, 25, 23, 19, 20, 26, 24],
+      "memory": [66, 65, 64, 63, 59, 63, 60],
+      "disk": [48, 49, 49, 49, 50, 50, 51],
+      "batteryHealth": [82, 82, 82, 81, 82, 81, 81]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0349",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Ananya Iyer",
+    "team": "Engineering",
+    "os": "Windows 11 23H2",
+    "serial": "WMG318KQJX",
+    "enrolledAt": "2021-09-01",
+    "minutesSinceCheckIn": 24,
+    "metrics": {
+      "cpu": 30,
+      "memory": 43,
+      "disk": 48,
+      "batteryHealth": 90
+    },
+    "history": {
+      "cpu": [20, 20, 23, 24, 29, 30, 30],
+      "memory": [42, 39, 44, 42, 41, 43, 43],
+      "disk": [45, 45, 46, 46, 47, 48, 48],
+      "batteryHealth": [90, 90, 90, 90, 90, 90, 90]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0289",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Ethan Brooks",
+    "team": "Design",
+    "os": "Windows 11 23H2",
+    "serial": "7UKKAXBSXH",
+    "enrolledAt": "2025-09-21",
+    "minutesSinceCheckIn": 40,
+    "metrics": {
+      "cpu": 14,
+      "memory": 42,
+      "disk": 40,
+      "batteryHealth": 97
+    },
+    "history": {
+      "cpu": [10, 12, 14, 15, 16, 16, 14],
+      "memory": [43, 40, 40, 41, 42, 45, 42],
+      "disk": [36, 37, 37, 38, 38, 40, 40],
+      "batteryHealth": [98, 98, 98, 98, 97, 97, 97]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0140",
+    "model": "Dell XPS 15 9520",
+    "owner": "Mia Lindqvist",
+    "team": "Support",
+    "os": "Windows 11 23H2",
+    "serial": "U9KG3399H6",
+    "enrolledAt": "2021-11-14",
+    "minutesSinceCheckIn": 38,
+    "metrics": {
+      "cpu": 46,
+      "memory": 59,
+      "disk": 63,
+      "batteryHealth": 92
+    },
+    "history": {
+      "cpu": [42, 43, 42, 38, 45, 41, 46],
+      "memory": [63, 59, 58, 62, 61, 58, 59],
+      "disk": [59, 60, 61, 62, 62, 63, 63],
+      "batteryHealth": [93, 93, 93, 92, 92, 92, 92]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0293",
+    "model": "Dell Latitude 7430",
+    "owner": "Omar Haddad",
+    "team": "Sales",
+    "os": "Windows 11 22H2",
+    "serial": "ZRH09RPB2S",
+    "enrolledAt": "2023-12-23",
+    "minutesSinceCheckIn": 6,
+    "metrics": {
+      "cpu": 20,
+      "memory": 60,
+      "disk": 45,
+      "batteryHealth": 95
+    },
+    "history": {
+      "cpu": [7, 10, 13, 11, 19, 14, 20],
+      "memory": [52, 54, 59, 55, 55, 58, 60],
+      "disk": [42, 42, 44, 44, 44, 44, 45],
+      "batteryHealth": [96, 96, 96, 95, 95, 95, 95]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0254",
+    "model": "MacBook Pro 14\" (2023)",
+    "owner": "Isabella Rossi",
+    "team": "Marketing",
+    "os": "macOS 15.1",
+    "serial": "6DNV2DLGVR",
+    "enrolledAt": "2025-08-27",
+    "minutesSinceCheckIn": 9,
+    "metrics": {
+      "cpu": 29,
+      "memory": 41,
+      "disk": 50,
+      "batteryHealth": 92
+    },
+    "history": {
+      "cpu": [25, 26, 24, 31, 32, 31, 29],
+      "memory": [41, 43, 44, 42, 42, 40, 41],
+      "disk": [48, 49, 49, 49, 50, 49, 50],
+      "batteryHealth": [93, 93, 92, 92, 92, 92, 92]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0293",
+    "model": "MacBook Pro 16\" (2023)",
+    "owner": "Jack Thompson",
+    "team": "Finance",
+    "os": "macOS 15.1",
+    "serial": "3ZSC0S790D",
+    "enrolledAt": "2022-07-05",
+    "minutesSinceCheckIn": 39,
+    "metrics": {
+      "cpu": 53,
+      "memory": 54,
+      "disk": 59,
+      "batteryHealth": 84
+    },
+    "history": {
+      "cpu": [60, 55, 61, 60, 59, 55, 53],
+      "memory": [58, 59, 54, 53, 52, 57, 54],
+      "disk": [59, 59, 59, 59, 59, 58, 59],
+      "batteryHealth": [86, 85, 85, 85, 85, 84, 84]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0161",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Sana Qureshi",
+    "team": "Engineering",
+    "os": "macOS 14.6",
+    "serial": "WSPQXEMJKV",
+    "enrolledAt": "2024-10-09",
+    "minutesSinceCheckIn": 19,
+    "metrics": {
+      "cpu": 34,
+      "memory": 49,
+      "disk": 57,
+      "batteryHealth": 88
+    },
+    "history": {
+      "cpu": [31, 33, 36, 29, 28, 31, 34],
+      "memory": [54, 51, 50, 50, 51, 52, 49],
+      "disk": [56, 57, 57, 57, 57, 57, 57],
+      "batteryHealth": [88, 88, 88, 88, 88, 88, 88]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0358",
+    "model": "MacBook Air 15\" (2024)",
+    "owner": "Diego Castillo",
+    "team": "Design",
+    "os": "macOS 15.1",
+    "serial": "SXHE0WYEL7",
+    "enrolledAt": "2025-12-14",
+    "minutesSinceCheckIn": 44,
+    "metrics": {
+      "cpu": 21,
+      "memory": 38,
+      "disk": 65,
+      "batteryHealth": 90
+    },
+    "history": {
+      "cpu": [23, 24, 23, 20, 20, 19, 21],
+      "memory": [39, 40, 36, 36, 37, 36, 38],
+      "disk": [63, 63, 64, 64, 64, 65, 65],
+      "batteryHealth": [90, 91, 91, 90, 90, 90, 90]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0219",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Grace Nakamura",
+    "team": "Support",
+    "os": "Windows 11 23H2",
+    "serial": "D38HKBD8Z3",
+    "enrolledAt": "2025-01-08",
+    "minutesSinceCheckIn": 40,
+    "metrics": {
+      "cpu": 35,
+      "memory": 31,
+      "disk": 41,
+      "batteryHealth": 88
+    },
+    "history": {
+      "cpu": [31, 29, 30, 28, 35, 30, 35],
+      "memory": [37, 37, 33, 33, 35, 30, 31],
+      "disk": [38, 39, 39, 40, 40, 40, 41],
+      "batteryHealth": [89, 89, 89, 89, 88, 88, 88]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0325",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Henry Wallace",
+    "team": "Sales",
+    "os": "Windows 11 23H2",
+    "serial": "RMSEGEKGG1",
+    "enrolledAt": "2022-12-27",
+    "minutesSinceCheckIn": 4,
+    "metrics": {
+      "cpu": 45,
+      "memory": 55,
+      "disk": 58,
+      "batteryHealth": 94
+    },
+    "history": {
+      "cpu": [50, 45, 50, 45, 42, 48, 45],
+      "memory": [49, 51, 50, 51, 52, 52, 55],
+      "disk": [55, 56, 57, 57, 57, 57, 58],
+      "batteryHealth": [94, 95, 94, 94, 94, 94, 94]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0318",
+    "model": "Dell XPS 15 9520",
+    "owner": "Zara Kapoor",
+    "team": "Marketing",
+    "os": "Windows 11 23H2",
+    "serial": "FDUFJNKUQH",
+    "enrolledAt": "2023-09-21",
+    "minutesSinceCheckIn": 24,
+    "metrics": {
+      "cpu": 38,
+      "memory": 61,
+      "disk": 62,
+      "batteryHealth": 96
+    },
+    "history": {
+      "cpu": [44, 45, 45, 40, 40, 36, 38],
+      "memory": [66, 66, 61, 61, 62, 64, 61],
+      "disk": [60, 60, 61, 60, 61, 62, 62],
+      "batteryHealth": [97, 97, 97, 96, 96, 96, 96]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0368",
+    "model": "Dell Latitude 7430",
+    "owner": "Felix Bauer",
+    "team": "Finance",
+    "os": "Windows 11 22H2",
+    "serial": "F5HRCCR97P",
+    "enrolledAt": "2025-11-09",
+    "minutesSinceCheckIn": 8,
+    "metrics": {
+      "cpu": 44,
+      "memory": 60,
+      "disk": 32,
+      "batteryHealth": 90
+    },
+    "history": {
+      "cpu": [33, 34, 36, 42, 36, 39, 44],
+      "memory": [58, 60, 62, 63, 57, 62, 60],
+      "disk": [29, 29, 30, 30, 31, 31, 32],
+      "batteryHealth": [91, 91, 91, 90, 90, 90, 90]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0274",
+    "model": "MacBook Pro 14\" (2023)",
+    "owner": "Nora Petrova",
+    "team": "Engineering",
+    "os": "macOS 15.1",
+    "serial": "9TBA9F59F2",
+    "enrolledAt": "2024-06-17",
+    "minutesSinceCheckIn": 31,
+    "metrics": {
+      "cpu": 57,
+      "memory": 43,
+      "disk": 41,
+      "batteryHealth": 81
+    },
+    "history": {
+      "cpu": [60, 57, 60, 54, 60, 57, 57],
+      "memory": [40, 40, 43, 43, 43, 40, 43],
+      "disk": [38, 39, 39, 40, 40, 41, 41],
+      "batteryHealth": [81, 81, 81, 81, 81, 81, 81]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0166",
+    "model": "MacBook Pro 16\" (2023)",
+    "owner": "Samuel Adeyemi",
+    "team": "Design",
+    "os": "macOS 15.1",
+    "serial": "XLLUVBDFZU",
+    "enrolledAt": "2024-09-06",
+    "minutesSinceCheckIn": 41,
+    "metrics": {
+      "cpu": 18,
+      "memory": 57,
+      "disk": 34,
+      "batteryHealth": 80
+    },
+    "history": {
+      "cpu": [15, 11, 17, 9, 18, 18, 18],
+      "memory": [62, 60, 58, 57, 57, 60, 57],
+      "disk": [33, 33, 33, 33, 33, 34, 34],
+      "batteryHealth": [81, 81, 81, 81, 80, 80, 80]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0342",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Elena Popescu",
+    "team": "Support",
+    "os": "macOS 14.6",
+    "serial": "2DD7QZ7AQG",
+    "enrolledAt": "2025-05-25",
+    "minutesSinceCheckIn": 32,
+    "metrics": {
+      "cpu": 12,
+      "memory": 55,
+      "disk": 59,
+      "batteryHealth": 78
+    },
+    "history": {
+      "cpu": [21, 17, 22, 21, 12, 13, 12],
+      "memory": [48, 51, 52, 54, 54, 53, 55],
+      "disk": [56, 57, 57, 58, 58, 58, 59],
+      "batteryHealth": [78, 78, 78, 78, 78, 78, 78]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0264",
+    "model": "MacBook Air 15\" (2024)",
+    "owner": "Vikram Shah",
+    "team": "Sales",
+    "os": "macOS 15.1",
+    "serial": "0QLT7WWS7W",
+    "enrolledAt": "2025-09-14",
+    "minutesSinceCheckIn": 26,
+    "metrics": {
+      "cpu": 57,
+      "memory": 55,
+      "disk": 30,
+      "batteryHealth": 100
+    },
+    "history": {
+      "cpu": [64, 59, 62, 56, 58, 56, 57],
+      "memory": [47, 51, 53, 54, 52, 55, 55],
+      "disk": [27, 27, 28, 29, 29, 30, 30],
+      "batteryHealth": [100, 100, 100, 100, 100, 100, 100]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0363",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Ruby Hughes",
+    "team": "Marketing",
+    "os": "Windows 11 23H2",
+    "serial": "N9202GAVZD",
+    "enrolledAt": "2022-01-16",
+    "minutesSinceCheckIn": 10,
+    "metrics": {
+      "cpu": 45,
+      "memory": 55,
+      "disk": 27,
+      "batteryHealth": 92
+    },
+    "history": {
+      "cpu": [33, 34, 44, 40, 42, 42, 45],
+      "memory": [62, 62, 61, 57, 54, 53, 55],
+      "disk": [25, 26, 26, 26, 26, 27, 27],
+      "batteryHealth": [94, 93, 93, 93, 93, 92, 92]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0318",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Jonas Keller",
+    "team": "Finance",
+    "os": "Windows 11 23H2",
+    "serial": "6WEJCV4SKC",
+    "enrolledAt": "2021-10-19",
+    "minutesSinceCheckIn": 35,
+    "metrics": {
+      "cpu": 17,
+      "memory": 45,
+      "disk": 39,
+      "batteryHealth": 85
+    },
+    "history": {
+      "cpu": [21, 19, 23, 19, 18, 16, 17],
+      "memory": [39, 40, 39, 44, 45, 42, 45],
+      "disk": [37, 37, 37, 37, 39, 39, 39],
+      "batteryHealth": [86, 86, 85, 85, 85, 85, 85]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0111",
+    "model": "Dell XPS 15 9520",
+    "owner": "Leila Farouk",
+    "team": "Engineering",
+    "os": "Windows 11 23H2",
+    "serial": "XXWPJ9PSVM",
+    "enrolledAt": "2023-10-06",
+    "minutesSinceCheckIn": 44,
+    "metrics": {
+      "cpu": 48,
+      "memory": 39,
+      "disk": 61,
+      "batteryHealth": 94
+    },
+    "history": {
+      "cpu": [48, 48, 46, 46, 45, 43, 48],
+      "memory": [37, 37, 39, 38, 39, 38, 39],
+      "disk": [58, 59, 59, 59, 60, 60, 61],
+      "batteryHealth": [94, 94, 94, 94, 94, 94, 94]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0243",
+    "model": "Dell Latitude 7430",
+    "owner": "Caleb Morgan",
+    "team": "Design",
+    "os": "Windows 11 22H2",
+    "serial": "68JVHAP9S8",
+    "enrolledAt": "2025-12-05",
+    "minutesSinceCheckIn": 39,
+    "metrics": {
+      "cpu": 46,
+      "memory": 36,
+      "disk": 60,
+      "batteryHealth": 85
+    },
+    "history": {
+      "cpu": [52, 55, 50, 51, 48, 49, 46],
+      "memory": [33, 30, 34, 35, 32, 37, 36],
+      "disk": [57, 57, 58, 59, 59, 60, 60],
+      "batteryHealth": [86, 86, 86, 86, 86, 85, 85]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0290",
+    "model": "MacBook Pro 14\" (2023)",
+    "owner": "Ingrid Solberg",
+    "team": "Support",
+    "os": "macOS 15.1",
+    "serial": "292FZJVBBS",
+    "enrolledAt": "2022-08-10",
+    "minutesSinceCheckIn": 6,
+    "metrics": {
+      "cpu": 38,
+      "memory": 61,
+      "disk": 42,
+      "batteryHealth": 87
+    },
+    "history": {
+      "cpu": [43, 37, 35, 35, 38, 34, 38],
+      "memory": [57, 55, 60, 60, 57, 59, 61],
+      "disk": [38, 38, 39, 39, 40, 41, 42],
+      "batteryHealth": [88, 88, 88, 88, 87, 87, 87]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBP-0330",
+    "model": "MacBook Pro 16\" (2023)",
+    "owner": "Kofi Mensah",
+    "team": "Sales",
+    "os": "macOS 15.1",
+    "serial": "6627G47LXK",
+    "enrolledAt": "2022-02-10",
+    "minutesSinceCheckIn": 10,
+    "metrics": {
+      "cpu": 9,
+      "memory": 34,
+      "disk": 60,
+      "batteryHealth": 83
+    },
+    "history": {
+      "cpu": [15, 19, 14, 11, 13, 15, 9],
+      "memory": [38, 37, 36, 37, 34, 35, 34],
+      "disk": [59, 58, 58, 59, 60, 60, 60],
+      "batteryHealth": [84, 84, 84, 84, 83, 83, 83]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0389",
+    "model": "MacBook Air 13\" (2022)",
+    "owner": "Hana Kim",
+    "team": "Marketing",
+    "os": "macOS 14.6",
+    "serial": "KR256EL3NA",
+    "enrolledAt": "2021-11-09",
+    "minutesSinceCheckIn": 4,
+    "metrics": {
+      "cpu": 12,
+      "memory": 55,
+      "disk": 45,
+      "batteryHealth": 79
+    },
+    "history": {
+      "cpu": [3, 8, 5, 7, 12, 11, 12],
+      "memory": [56, 55, 55, 55, 58, 53, 55],
+      "disk": [42, 43, 43, 43, 44, 44, 45],
+      "batteryHealth": [80, 80, 80, 79, 79, 79, 79]
+    },
+    "alerts": []
+  },
+  {
+    "id": "MBA-0317",
+    "model": "MacBook Air 15\" (2024)",
+    "owner": "Oscar Nilsson",
+    "team": "Finance",
+    "os": "macOS 15.1",
+    "serial": "B9S0JVTAGY",
+    "enrolledAt": "2021-10-02",
+    "minutesSinceCheckIn": 37,
+    "metrics": {
+      "cpu": 55,
+      "memory": 51,
+      "disk": 44,
+      "batteryHealth": 94
+    },
+    "history": {
+      "cpu": [47, 47, 53, 52, 50, 55, 55],
+      "memory": [53, 52, 53, 53, 49, 54, 51],
+      "disk": [42, 43, 43, 43, 43, 44, 44],
+      "batteryHealth": [95, 94, 95, 94, 94, 94, 94]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0316",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "owner": "Meera Pillai",
+    "team": "Engineering",
+    "os": "Windows 11 23H2",
+    "serial": "Y3ZAQUHR89",
+    "enrolledAt": "2023-09-23",
+    "minutesSinceCheckIn": 9,
+    "metrics": {
+      "cpu": 21,
+      "memory": 49,
+      "disk": 61,
+      "batteryHealth": 97
+    },
+    "history": {
+      "cpu": [21, 17, 17, 21, 17, 25, 21],
+      "memory": [51, 55, 54, 53, 48, 49, 49],
+      "disk": [58, 58, 58, 59, 60, 60, 61],
+      "batteryHealth": [98, 98, 98, 97, 97, 97, 97]
+    },
+    "alerts": []
+  },
+  {
+    "id": "LNV-0382",
+    "model": "ThinkPad T14s Gen 3",
+    "owner": "Theo Lambert",
+    "team": "Design",
+    "os": "Windows 11 23H2",
+    "serial": "ME4JAQCTCW",
+    "enrolledAt": "2023-10-25",
+    "minutesSinceCheckIn": 22,
+    "metrics": {
+      "cpu": 44,
+      "memory": 59,
+      "disk": 58,
+      "batteryHealth": 84
+    },
+    "history": {
+      "cpu": [36, 34, 41, 37, 37, 43, 44],
+      "memory": [57, 54, 53, 54, 55, 56, 59],
+      "disk": [56, 57, 57, 57, 57, 58, 58],
+      "batteryHealth": [85, 85, 85, 85, 85, 84, 84]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0242",
+    "model": "Dell XPS 15 9520",
+    "owner": "Amara Okonkwo",
+    "team": "Support",
+    "os": "Windows 11 23H2",
+    "serial": "A64K9AC1X3",
+    "enrolledAt": "2024-03-23",
+    "minutesSinceCheckIn": 21,
+    "metrics": {
+      "cpu": 19,
+      "memory": 55,
+      "disk": 46,
+      "batteryHealth": 93
+    },
+    "history": {
+      "cpu": [27, 27, 27, 21, 24, 18, 19],
+      "memory": [47, 48, 49, 55, 50, 56, 55],
+      "disk": [45, 45, 45, 46, 46, 45, 46],
+      "batteryHealth": [94, 94, 94, 94, 93, 93, 93]
+    },
+    "alerts": []
+  },
+  {
+    "id": "DEL-0124",
+    "model": "Dell Latitude 7430",
+    "owner": "Ben Sullivan",
+    "team": "Sales",
+    "os": "Windows 11 22H2",
+    "serial": "LCUXXNY3PZ",
+    "enrolledAt": "2022-10-06",
+    "minutesSinceCheckIn": 13,
+    "metrics": {
+      "cpu": 30,
+      "memory": 37,
+      "disk": 40,
+      "batteryHealth": 96
+    },
+    "history": {
+      "cpu": [20, 20, 23, 30, 23, 32, 30],
+      "memory": [44, 38, 42, 40, 39, 36, 37],
+      "disk": [38, 38, 38, 39, 40, 40, 40],
+      "batteryHealth": [97, 97, 97, 97, 96, 96, 96]
+    },
+    "alerts": []
+  }
+]

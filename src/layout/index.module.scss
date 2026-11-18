@@ -1,0 +1,80 @@
+@use 'mixins' as *;
+
+.skipLink {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 50;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: 600;
+
+  &:focus {
+    top: 12px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+.name {
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+/* Fixed width so the label change does not shift the header. */
+.refresh {
+  min-width: 96px;
+}
+
+.main {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@include above($bp-summary) {
+  .header {
+    padding: 12px 24px;
+  }
+
+  .main {
+    padding: 24px;
+  }
+}

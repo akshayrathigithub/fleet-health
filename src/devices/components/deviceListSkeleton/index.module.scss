@@ -1,0 +1,21 @@
+.list {
+  padding: 4px 14px 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1.6fr 1.2fr 0.9fr 0.8fr;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.stack {
+  display: grid;
+  gap: 8px;
+}

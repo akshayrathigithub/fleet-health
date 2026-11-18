@@ -1,0 +1,68 @@
+/*
+ * Design tokens. These stay CSS custom properties so light and dark follow
+ * the user's color scheme at runtime. Breakpoints live in _mixins.scss,
+ * because media queries cannot read custom properties.
+ */
+:root {
+  color-scheme: light dark;
+
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-2: #f0f2f5;
+  --border: #d9dde3;
+  --text: #17202b;
+  --text-muted: #556070;
+
+  --accent: #1f5fd1;
+  --accent-tint: #eaf1fd;
+  --accent-contrast: #ffffff;
+
+  --crit: #b3261e;
+  --crit-bg: #fdecea;
+  --crit-fill: #d43a30;
+  --warn: #8a5300;
+  --warn-bg: #fff4dc;
+  --warn-fill: #d98a00;
+  --ok: #1b6e3c;
+  --ok-bg: #e6f4ea;
+  --off: #556070;
+  --off-bg: #eceff3;
+  --meter: #8c97a6;
+
+  --radius: 10px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 2px rgb(16 24 40 / 0.06);
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1318;
+    --surface: #171c23;
+    --surface-2: #1f2630;
+    --border: #2e3743;
+    --text: #e6eaf0;
+    --text-muted: #9aa6b5;
+
+    --accent: #7aa7ff;
+    --accent-tint: #1a2740;
+    --accent-contrast: #0b1220;
+
+    --crit: #ff8a80;
+    --crit-bg: #3a1614;
+    --crit-fill: #ff6b5e;
+    --warn: #ffc266;
+    --warn-bg: #3a2a0c;
+    --warn-fill: #f0a52a;
+    --ok: #7ddc9c;
+    --ok-bg: #12301d;
+    --off: #9aa6b5;
+    --off-bg: #252c36;
+    --meter: #6b7686;
+
+    --shadow: none;
+  }
+}

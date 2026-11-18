@@ -1,0 +1,59 @@
+@use 'mixins' as *;
+
+.dialog {
+  width: min(calc(100% - 32px), 440px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 24px 64px rgb(0 0 0 / 0.35);
+
+  &::backdrop {
+    background: rgb(10 14 20 / 0.55);
+  }
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.0625rem;
+  line-height: 1.3;
+}
+
+.description {
+  @include muted;
+}
+
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: var(--crit);
+
+  svg {
+    margin-top: 2px;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* On phones, stack full-width buttons so both are easy to hit. Visual order
+   matches DOM order, so the tab sequence is the same as what is on screen. */
+@include below($bp-stack-actions) {
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

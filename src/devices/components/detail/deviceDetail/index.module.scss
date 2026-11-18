@@ -1,0 +1,248 @@
+@use 'mixins' as *;
+
+.panel {
+  @include surface;
+  padding: 16px;
+  min-width: 0;
+
+  /* The panel takes programmatic focus when a device is opened. It is a
+     container, not a control, so it does not need a focus ring. */
+  &:focus {
+    outline: none;
+  }
+}
+
+.placeholder {
+  @include surface;
+  display: none;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.model,
+.muted {
+  @include muted;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+
+  dt {
+    font-size: var(--text-xs);
+    @include muted;
+  }
+
+  dd {
+    overflow-wrap: anywhere;
+  }
+}
+
+.section {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.sectionHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 8px;
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: var(--text-base);
+  }
+}
+
+.sectionNote {
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.chart {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+
+  &.warning .chartValue {
+    color: var(--warn);
+  }
+
+  &.critical .chartValue {
+    color: var(--crit);
+  }
+}
+
+.chartLabel {
+  font-size: var(--text-xs);
+  @include muted;
+}
+
+.chartValue {
+  margin-bottom: 6px;
+  font-size: 1.125rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.chartNote {
+  margin-top: 4px;
+  font-size: 0.6875rem;
+  @include muted;
+}
+
+.alerts {
+  display: grid;
+  gap: 8px;
+}
+
+.alert {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+
+  &.critical {
+    border-left-color: var(--crit-fill);
+  }
+
+  &.warning {
+    border-left-color: var(--warn-fill);
+  }
+
+  &.acknowledged {
+    background: var(--surface-2);
+  }
+}
+
+.alertIcon {
+  margin-top: 3px;
+}
+
+.critical .alertIcon {
+  color: var(--crit);
+}
+
+.warning .alertIcon {
+  color: var(--warn);
+}
+
+.acknowledged .alertIcon {
+  color: var(--ok);
+}
+
+.alertTitle {
+  font-weight: 650;
+}
+
+.alertText {
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+.alertAction {
+  margin-top: 8px;
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+.flagged {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  @include red-tag;
+
+  svg {
+    margin-top: 3px;
+  }
+}
+
+.skeleton {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* Narrow screens: the detail is a page of its own. */
+@include below($bp-detail) {
+  .panel {
+    width: 100%;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+}
+
+/* Wide screens: a sticky side panel. */
+@include above($bp-detail) {
+  .panel {
+    position: sticky;
+    top: 16px;
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
+  }
+
+  .placeholder {
+    display: block;
+    position: sticky;
+    top: 16px;
+  }
+
+  .back {
+    display: none;
+  }
+}

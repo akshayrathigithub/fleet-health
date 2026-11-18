@@ -1,0 +1,46 @@
+@use 'mixins' as *;
+
+.root {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 6px;
+  min-height: 240px;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 4px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  @include muted;
+
+  &.success {
+    background: var(--ok-bg);
+    color: var(--ok);
+  }
+
+  &.critical {
+    background: var(--crit-bg);
+    color: var(--crit);
+  }
+}
+
+.title {
+  font-weight: 650;
+}
+
+.description {
+  max-width: 36ch;
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+.action {
+  margin-top: 8px;
+}

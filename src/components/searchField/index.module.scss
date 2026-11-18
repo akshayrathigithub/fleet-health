@@ -1,0 +1,36 @@
+@use 'mixins' as *;
+
+.field {
+  @include field;
+}
+
+.label {
+  @include field-label;
+}
+
+.control {
+  @include control-box;
+}
+
+.searchWrap {
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  translate: 0 -50%;
+  @include muted;
+  pointer-events: none;
+}
+
+.searchInput {
+  padding-left: 32px;
+}
+
+@include coarse {
+  .control {
+    min-height: 44px;
+  }
+}

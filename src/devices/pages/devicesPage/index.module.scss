@@ -1,0 +1,51 @@
+@use 'mixins' as *;
+
+.pageHead {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  @include muted;
+}
+
+.workspace {
+  display: grid;
+  gap: 16px;
+}
+
+.list {
+  @include surface;
+  min-width: 0;
+}
+
+.resultCount {
+  padding: 10px 14px 12px;
+  font-size: var(--text-sm);
+  @include muted;
+}
+
+/*
+ * Narrow screens: an open device replaces the overview and list, like a
+ * separate page. Hiding them (rather than layering a drawer on top) keeps
+ * hidden content out of the tab order without a focus trap.
+ */
+@include below($bp-detail) {
+  .page[data-detail-open='true'] .overview,
+  .page[data-detail-open='true'] .list {
+    display: none;
+  }
+}
+
+/* Wide screens: list and detail side by side. */
+@include above($bp-detail) {
+  .workspace {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    align-items: start;
+  }
+}

@@ -1,0 +1,50 @@
+@use 'mixins' as *;
+
+.button {
+  @include control-chrome(0 14px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--surface-2);
+  }
+
+  &[aria-disabled='true'] {
+    opacity: 0.7;
+    cursor: progress;
+  }
+}
+
+.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-contrast);
+
+  &:hover {
+    background: var(--accent);
+    filter: brightness(1.08);
+  }
+}
+
+.sm {
+  min-height: 32px;
+  padding: 0 10px;
+  font-size: var(--text-sm);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* Comfortable touch targets on phones and tablets. Kept after .sm so the
+   larger target wins when both apply. */
+@include coarse {
+  .button {
+    min-height: 44px;
+  }
+}

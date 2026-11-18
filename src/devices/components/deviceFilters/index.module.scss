@@ -1,0 +1,25 @@
+@use 'mixins' as *;
+
+/* Phone: search on its own row, dropdowns two per row. */
+.toolbar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  padding: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.search {
+  grid-column: 1 / -1;
+}
+
+/* Tablet and up: everything on one row. */
+@include above($bp-table) {
+  .toolbar {
+    grid-template-columns: minmax(180px, 1fr) repeat(3, minmax(120px, 170px));
+  }
+
+  .search {
+    grid-column: auto;
+  }
+}
